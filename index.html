@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <script
+      src="https://kit.fontawesome.com/447874f45e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css"
+      integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="doc-head">
+      <i class="fas fa-bars"></i>
+      <div class="naming">
+        <img src="../Images/StickIcecream.svg" alt="icecream" class="head-IC" />
+        <h1 class="cursive">Ice Cream UI</h1>
+      </div>
+
+      <nav class="page-links">
+        <a class="underline link-head" href="/Documentation/index.html">INSTALLATION</a>
+        <a class="underline link-head" href="/Utilities/margin-paddings/margin-padding.html">DOCS</a>
+      </nav>
+
+      <a href="" class="github-repo">
+        <img src="../Images/icons8-github.svg" alt="Github" class="head-IC"
+      /></a>
+    </header>
+    <div class="content-area">
+      <aside class="section-aside">
+        <h2 class="section-head">Sections</h2>
+        <ul class="side-nav">
+          <li class="li-space">
+            <button class="side-btn">
+              <i class="fas fa-caret-up"></i>INSTALLATION
+            </button>
+            <div class="collapse">
+              <ul>
+                <li><a href="/Documentation/index.html" class="underline side-link">Installation</a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="li-space">
+            <button class="side-btn">
+              <i class="fas fa-caret-up"></i> UTILITIES
+            </button>
+            <div class="collapse">
+              <ul>
+
+                <li><a href="/Utilities/margin-paddings/margin-padding.html" class="underline side-link">Margin/Padding</a></li>
+                <li><a href="/Utilities/texts/text-utils.html" class="underline side-link">Text-utils</a></li>
+                <li><a href="/Utilities/colors-borders/colors-borders.html" class="underline side-link">Colors/Borders</a></li>
+                <li><a href="/Utilities/flex-utils/flex-utils.html" class="underline side-link">Flex-utils</a></li>
+                <li><a href="/Utilities/Grid-utils/grid.html" class="underline side-link">Grid-utils</a></li>
+                
+              </ul>
+            </div>
+          </li>
+
+          <li class="li-space">
+            <button class="side-btn">
+              <i class="fas fa-caret-up"></i>COMPONENTS
+            </button>
+            <div class="collapse">
+              <ul>
+                <li><a href="/components/Alerts/alert.html" class="underline side-link">Alerts</a></li>
+                <li><a href="/components/Avatar/Avatar.html" class="underline side-link">Avatar</a></li>
+                <li><a href="/components/Badges/badges.html" class="underline side-link">Badges</a></li>
+                <li><a href="/components/Buttons/buttons.html" class="underline side-link">Buttons</a></li>
+                <li><a href="/components/cards/cards.html" class="underline side-link">Cards</a></li>
+                <li><a href="/components/Images/image.html" class="underline side-link">Images</a></li>
+                <li><a href="/components/Inputs/inputs.html" class="underline side-link">Inputs</a></li>
+                <li><a href="/components/lists/list.html" class="underline side-link">Lists</a></li>
+                <li><a href="/components/Modal/modal.html" class="underline side-link">Modals</a></li>
+                <li><a href="/components/Navigation/navigation.html" class="underline side-link">Navigations</a></li>
+                <li><a href="/components/ratings/ratings.html" class="underline side-link">Ratings</a></li>
+                <li><a href="/components/Slider/slider.html" class="underline side-link">Slider</a></li>
+                <li><a href="/components/Snackbar/snackbar.html" class="underline side-link">Snackbar</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <main class="main-div">
+        <h1 class="text-center">INSTALLATION</h1>
+        <p>
+          To get started place this link tag in your head tag below everything
+          else in your html page. <strong>NOTE</strong> that you place this link
+          tag <strong>below your own style tag</strong> so if any classes name
+          clashes this style tag should have the precedence.
+        </p>
+        <pre>
+          <code class="language-html">
+            &lt;link rel="stylesheet" href="../main.css" /&gt;
+          </code>
+        </pre>
+        <h3 class="mgn-tp-2">Javascript guide</h3>
+        <p>
+          Some components use javascript if you need those then the respective
+          script tags could be found in those component's documentation.
+        </p>
+        <h3 class="mgn-tp-4 ">Walkaround</h3>
+        <p>
+          To explore more pages, components and utilities use the sidebar
+          (Hamburger menu if you are in smaller devices).
+        </p>
+        <h3 class="mgn-tp-4 ">Features</h3>
+        <p>
+          Build your website with these reusable components.
+          <i class="fas fa-recycle"></i>
+        </p>
+        <p>
+          Responsive for mobile devices such as tablets
+          <i class="fas fa-tablet-alt"></i> and phones.<i
+            class="fas fa-mobile-alt"
+          ></i>
+        </p>
+        <h3 class="mgn-tp-4 credits">Credits</h3>
+        <p>
+          <strong>ICONS</strong> in this library are used from fontawesome you
+          can get yours in
+          <a href="https://fontawesome.com/" target="_blank">
+            <u> <strong>fontawesome website</strong> </u>
+          </p> 
+            <p>
+          </a>
+           Images from
+          <a href="https://www.pexels.com/" target="_blank">
+            <u> <strong>Pexels.com</strong> </u> 
+          </a>
+        </p>
+        <p>
+          Fonts used in this documentation are from  <u><strong><a href="https://fonts.google.com/" target="_blank">Google fonts</a></strong></u>
+        </p>
+      </main>
+    </div>
+    
+    <footer class="foot">All rights reserved</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
