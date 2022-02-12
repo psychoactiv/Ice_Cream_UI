@@ -1,0 +1,30 @@
+.grid-two-items {
+  background-color: var(--lynx-gray);
+}
+.fit-this-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid-two-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+.grid-2-1-img {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+}
+
+.grid-1-2-img {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1rem;
+}
+
+.grid-3-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
