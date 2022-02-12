@@ -1,0 +1,8 @@
+@import url("../../Utilities/utilities.css");
+
+.alert-layout {
+  display: flex;
+  width: 46rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
