@@ -1,0 +1,87 @@
+.lists-component {
+  list-style-position: inside;
+  width: max-content;
+  padding: 2rem;
+}
+
+.lists-component-outside {
+  list-style-position: outside;
+}
+
+.squared-list {
+  list-style-type: square;
+}
+
+.circled-list {
+  list-style-type: circle;
+}
+
+.list-border li {
+  border: 1px solid var(--dark800);
+  padding: 0.4rem;
+}
+
+.list-border {
+  width: max-content;
+}
+/* Stacked list */
+.account {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6rem;
+  padding: 0.8rem;
+  list-style: none;
+  margin: 7px 0px 5px 20px;
+  height: max-content;
+  width: max-content;
+  background-color: var(--white);
+  border-radius: 3px;
+  box-shadow: 1px 0px 5px 1px rgb(37, 35, 35);
+}
+
+.contact-head {
+  margin-left: 1rem;
+}
+
+.list-imgs {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.contacts {
+  display: flex;
+  column-gap: 8px;
+  row-gap: 7rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+}
+
+.add-contact {
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+.adding-logo {
+  font-size: 250%;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-list li:hover {
+  color: var(--blue1000);
+  cursor: pointer;
+}
+
+.contact-descript {
+  margin: 0.6rem auto;
+  text-align: center;
+}
