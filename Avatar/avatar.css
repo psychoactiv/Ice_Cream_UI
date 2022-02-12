@@ -1,0 +1,121 @@
+/* importing utilities file */
+@import url("./../../Utilities/utilities.css");
+
+/* image container properties */
+.cropped {
+  position: relative;
+  border-radius: 999rem;
+  overflow: hidden;
+}
+
+.cropped-wd-4 {
+  width: 4rem;
+  height: 4rem;
+}
+
+.cropped-wd-6 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.cropped-wd-8 {
+  width: 8rem;
+  height: 8rem;
+}
+.cropped-wd-10 {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* setting img width & height */
+
+/* width */
+.img-w-10 {
+  width: 10rem;
+  position: absolute;
+}
+
+.img-w-8 {
+  width: 8rem;
+  position: absolute;
+}
+
+.img-w-6 {
+  width: 6rem;
+  position: absolute;
+}
+
+.img-w-4 {
+  width: 4rem;
+  position: absolute;
+}
+
+/* imge height */
+.img-h-10 {
+  height: 10rem;
+  position: absolute;
+}
+
+.img-h-8 {
+  height: 8rem;
+  position: absolute;
+}
+
+.img-h-6 {
+  height: 6rem;
+  position: absolute;
+}
+
+.img-h-4 {
+  height: 4rem;
+  position: absolute;
+}
+
+/* image aligning classes */
+.img-tp-2 {
+  margin-top: -2rem;
+}
+
+.img-tp-4 {
+  margin-top: -4rem;
+}
+
+.img-tp-6 {
+  margin-top: -6rem;
+}
+
+.img-btm-2 {
+  margin-top: 2rem;
+}
+
+.img-btm-4 {
+  margin-top: 4rem;
+}
+
+.img-btm-6 {
+  margin-top: 6rem;
+}
+
+.img-rt-2 {
+  margin-left: 2rem;
+}
+
+.img-rt-4 {
+  margin-left: 4rem;
+}
+
+.img-rt-6 {
+  margin-left: 6rem;
+}
+
+.img-lt-2 {
+  margin-left: -2rem;
+}
+
+.img-lt-4 {
+  margin-left: -4rem;
+}
+
+.img-lt-6 {
+  margin-left: -6rem;
+}
