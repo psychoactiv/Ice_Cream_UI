@@ -1,0 +1,389 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("../Utilities/utilities.css");
+
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 40%;
+  width:100%;
+}
+
+:root {
+  --primary: #ff8585;
+  --secondary: rgb(85, 33, 33);
+  --tertiary: #ffbab2;
+  --light: #ffffff;
+  --curve: border-radius: 0.3rem;
+  --golden-yellow:#d48827 ;
+  --dark-slate-blue:darkslateblue;
+}
+
+body{
+  background-color: var(--tertiary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.landing-page{
+  position: fixed;
+  top: 0rem;
+  right:0rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffbab2;
+  text-align: center;
+  z-index: 1000;
+ } 
+
+.landing-page.hide-landing-page{
+  top: -100vh;
+  transition: 1s ease;
+}
+
+.entry-head{
+  height: 5rem;
+  position: absolute;
+  top: calc(50vh - 2.5rem);
+}
+
+.land-icon{
+  display: inline-block;
+}
+
+.enter-app:focus{
+  padding: 1.3rem 1.5rem 0.9rem 1.5rem;
+  box-shadow: inset 1px 3px 3px 2px var(--pink400);
+}
+.enter-app {
+  display: inline-block;
+  color: var(--pink300);
+  padding: 0.9rem 1.5rem 1.3rem 1.5rem;
+  box-shadow: inset 0px -3px 3px 2px var(--pink500);
+  transition: 0.5s ease-in-out;
+}
+.doc-head {
+  display: flex;
+  align-items: center;
+  background-color: var(--light);
+  height:10%;
+  overflow: hidden;
+  width:100%;
+}
+
+.fa-bars{
+  position: fixed;
+  left:1.3rem;
+  top:0.5rem;
+  font-size: 2.6rem;
+  padding: 1.3rem 1.5rem;
+  border-radius: 50%;
+  background-color:var(--primary);
+  color:white;
+  z-index: 999;
+}
+
+.naming {
+  display: flex;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-around;
+  width: 20rem;
+  margin: auto;
+}
+
+.cursive {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.head-IC {
+  height: 6rem;
+  width: 6rem;
+}
+
+.github-repo {
+  margin-left: auto;
+  margin-right: 0.6rem;
+}
+
+.underline{
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  font-family: 'Righteous', cursive;
+}
+
+.link-head{
+  border: var(--light) solid 0.01rem;
+  border-radius: 0.3rem;
+}
+
+.underline::after{
+  content:"";
+  bottom: 0rem;
+  left: 0rem;
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--tertiary);
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.underline:hover::after{
+   width:100%;
+   left:0rem;
+} 
+
+.link-head:focus  {
+  color: var(--primary);
+  background: var(--light);
+  border:var(--tertiary) solid 0.01rem;
+}
+
+.content-area{
+  display: flex; 
+   align-items: flex-start; 
+   justify-content: center;
+}
+
+.section-aside{
+  background-color: var(--secondary);
+  display: inline-block;  /* Fallback for flexbox */
+  vertical-align: top;
+  height: 100vh;    
+  position: sticky; 
+  top:0rem;
+  left:0rem;
+  width:0vw;
+  padding: 0.5rem 0rem;
+  align-self: stretch;
+  justify-self: flex-start;
+}
+
+.section-head{
+  color:var(--light) ;
+  font-weight: 100;
+  border-bottom:0.01rem solid var(--golden-yellow); 
+  width: 75%; 
+  margin: 0.5rem auto;
+  overflow: hidden;
+}
+
+.side-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0rem;
+  width: 85%;
+  margin-left:auto;
+  margin-right:auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 75%;
+}
+
+.li-space{
+  margin:  5%;
+  text-align: start;
+
+}
+
+
+
+.fa-caret-up{
+  font-size: 1.8rem;
+  transform: rotate(90deg);
+}
+
+.side-btn{
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1.3rem;
+  align-items: center;
+  font-family: 'Righteous', cursive;
+  height: 10vh;
+  font-size: 1.8vw;
+  width: 100%;
+  text-align: start;
+  color: var(--light);
+  border:var(--secondary) solid 0.01rem;
+  border-radius: 0.3rem;
+  background-color: var(--secondary);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+ 
+.side-btn.show{
+  color: var(--golden-yellow);
+  height: 2vh;
+}
+
+.collapse{
+  display: none;
+  overflow: hidden;
+
+  transition: 0.3s ease-in-out;
+}
+
+.collapse.show{
+  display: block;
+}
+
+.fa-caret-up.flip{
+  transform: rotate(180deg);
+}
+
+.underline.side-link{
+  color: var(--light);
+  font-size: 1.4vw;
+}
+
+.collapse ul li{
+  margin: 3.5rem 0rem;
+  list-style: none; 
+}
+
+ 
+
+.collapse .underline {
+  margin-left: 2.3rem;
+}
+
+/* Main Content */
+.main-div{
+  display: inline-block;   /* Fallback for flexbox */
+  vertical-align: top;     /* Fallback for flexbox */
+  width: 80vw;
+  font-size: 2rem;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+
+
+.main-div p {
+  color: var(--secondary);
+  margin-left: 1rem;
+}
+
+.child-div{
+  margin-left: 1rem;
+}
+
+.foot{
+  display:flex;
+  background-color:var(--light);
+  width: 100%;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous', cursive;
+}
+
+.language-html{
+  border-radius: 1.5rem;
+  margin:1rem 0rem;
+  text-align:initial;
+}
+
+/* Customizing scrollbar */
+::-webkit-scrollbar {
+  width: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+.side-nav::-webkit-scrollbar{
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--primary);
+  border-radius: 3rem;
+  
+}
+.side-nav::-webkit-scrollbar-track{
+  margin-top: 2rem; 
+  margin-bottom: 5rem;
+  background-color: var(--tertiary);
+  border: 0.1rem solid var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 3rem;
+  border: 0.15rem solid  var(--tertiary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary-transition);
+  border-radius: 3rem;
+  border: 0.15px solid var(--primary);
+}
+
+.credits p a u strong{
+  color:white;
+}
+/* customized scrollbar for firefox */
+@supports (scrollbar-color:  var(--secondary-transition) var(--primary)) {
+  * {
+    scrollbar-color: var(--secondary-transition) var(--primary);
+  }
+}
+
+/* Media query */
+
+@media screen  and  (min-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  .main-div{
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+  .content-area{
+    justify-content: flex-start;
+  }
+}
+
+
+
+@media screen  and  (min-width: 800px) {
+  html {
+    font-size: 100%;
+  }
+  .main-div{
+    font-size: 1.5rem;
+    width: 70vw;
+    margin: 2rem auto;
+  }
+  .fa-bars{
+    position: fixed ;
+   left: -6rem;
+   }
+ .section-aside{
+    width: 25vw;
+ }
+ .content-area{
+  justify-content: flex-end;
+}
+}
+
+
