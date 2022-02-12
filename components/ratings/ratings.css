@@ -1,0 +1,71 @@
+.yellow-star {
+  color: var(--pure-yellow);
+  padding: 1rem 0.5rem;
+}
+
+.all-the-stars {
+  background-color: var(--dark800);
+  width: max-content;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.alert-star {
+  color: var(--red-darkest-alert);
+  background-color: var(--red-icon-alert);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.red-star {
+  color: var(--red-darkest-alert);
+}
+
+.light-alert-star {
+  color: var(--red-alert);
+  background-color: var(--pure-red);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.light-red-star {
+  color: var(--red-alert);
+}
+
+.medium-star {
+  color: var(--pure-yellow);
+  background-color: var(--light-yellow);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.yellow-medium-star {
+  color: var(--pure-yellow);
+}
+
+.good-star {
+  color: var(--green-transition-alert);
+  background-color: var(--green-yellow-icon-alert);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.light-green-star {
+  color: var(--green-transition-alert);
+}
+
+.top-star {
+  color: var(--green-darkest-alert);
+  background-color: var(--pure-green);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: max-content;
+}
+
+.green-star {
+  color: var(--green-darkest-alert);
+}
