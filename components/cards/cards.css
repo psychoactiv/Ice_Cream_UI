@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.cards-common-layout {
+  background-color: azure;
+  box-shadow: 0px 0.5px 0.8px 0.1px grey;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.card-description {
+  margin: 2rem 0rem;
+}
+.cards-common-layout p {
+  margin: 0rem;
+}
+.hor-img {
+  width: 10rem;
+  height: 9rem;
+}
+
+.cards-common-layout.horizontal-card {
+  width: 26rem;
+  height: max-content;
+  align-self: flex-start;
+}
+
+.inner-flex {
+  display: flex;
+  column-gap: 0.8rem;
+}
+
+.grey-text {
+  font-size: 1rem;
+  color: rgb(109, 109, 109);
+  padding: 0 2%;
+}
+
+.btn-ico-hor {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: brown;
+}
+
+.btn-hor {
+  font-size: 1rem;
+  background-color: azure;
+  border: none;
+  color: brown;
+  padding: 0.5rem;
+}
+
+.btn-hor:hover {
+  background-color: rgb(250, 204, 204);
+  border-radius: 20px;
+}
+
+.hor-ico {
+  padding: 0.5rem;
+}
+
+.hor-ico:hover {
+  background-color: rgb(197, 195, 195);
+  border-radius: 50%;
+}
+
+.fa-ellipsis-v {
+  padding: 5px 10px;
+}
+
+/* Basic image */
+.basic-img-cards {
+  width: 100%;
+}
+
+.cards-common-structure {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 25rem;
+  width: 19rem;
+}
+
+.head-top {
+  order: -1;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  font-size: 1rem;
+  bottom: 0.8rem;
+  left: 0.1rem;
+  color: rgb(250, 250, 250);
+  text-shadow: 2px 2px rgb(95, 50, 50);
+}
+
+.overlay p {
+  color: white;
+}
+
+.cards-common-layout.manage-card-height {
+  height: min-content;
+  width: min-content;
+}
+
+.text-only-card.cards-common-structure {
+  row-gap: 1rem;
+  padding: 2rem 2rem 0.3rem 2rem;
+}
+
+.total-overlay {
+  width: 25rem;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 2%;
+  text-shadow: 2px 2px rgb(95, 50, 50);
+}
+
+.card-overlay-content {
+  position: absolute;
+  top: 2rem;
+  color: rgb(12, 12, 29);
+  text-shadow: 2px 2px Grey;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.each-card-conatainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min-content;
+}
+
+.close-text-overlay {
+  color: white;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  font-size: 2rem;
+  padding-bottom: 0.3px;
+}
+
+.cards-shadow-btn-rt {
+  box-shadow: 3px 3px 7px 3px rgb(78, 78, 78);
+}
+.cards-shadow-tp-lt {
+  box-shadow: -3px -3px 7px 3px rgb(78, 78, 78);
+}
+
+.cards-common-structure.cards-common-layout.sale-badge {
+  overflow: visible;
+}
+.sale-badge {
+  position: relative;
+}
+.sale-badge::after {
+  position: absolute;
+  content: "SALE";
+  top: 0.3rem;
+  right: -2rem;
+  background-color: rgb(243, 198, 0);
+  border: 2px solid rgb(184, 151, 6);
+  padding: 0 0.9rem;
+  transform: rotate(35deg);
+}
+
+.flat-offer-card {
+  position: relative;
+  overflow: visible;
+}
+.flat-offer-card::after {
+  position: absolute;
+  content: "60% OFF";
+  top: 0.3rem;
+  right: -2rem;
+  background-color: rgb(243, 198, 0);
+  border: 2px solid rgb(184, 151, 6);
+  border-radius: 5px;
+  padding: 0 0.9rem;
+  transform: rotate(35deg);
+}
