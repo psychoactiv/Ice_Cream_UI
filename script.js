@@ -33,9 +33,25 @@ sideBtn.forEach((btn) => {
   });
 });
 
-// Landing page
-const openpage = document.querySelector(".enter-app");
-const landingPage = document.querySelector(".landing-page");
-openpage.addEventListener("click", () => {
-  landingPage.classList.add("hide-landing-page");
+//Side nav when screen is small.
+const smallSideBtn = document.querySelector(".side-nav-options");
+const sideSectionCover = document.querySelector(".section-aside");
+const closeSectionCover = document.querySelector(".close-side-nav");
+const flipIcon = document.querySelector(".fa-bars");
+const sideBarLink = document.querySelector(".side-link");
+smallSideBtn.addEventListener("click", () => {
+  sideSectionCover.classList.add("full-screen");
+  smallSideBtn.style.display = "none";
+  closeSectionCover.style.display = "block";
+});
+
+closeSectionCover.addEventListener("click", () => {
+  sideSectionCover.classList.remove("full-screen");
+  smallSideBtn.style.display = "block";
+  closeSectionCover.style.display = "none";
+});
+
+sideBarLink.addEventListener("click", () => {
+  smallSideBtn.style.display = "block";
+  closeSectionCover.style.display = "none";
 });
