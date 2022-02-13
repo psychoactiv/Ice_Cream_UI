@@ -4,7 +4,7 @@
 /* image container properties */
 .cropped {
   position: relative;
-  border-radius: 999rem;
+  border-radius: 999px;
   overflow: hidden;
 }
 
