@@ -1,0 +1,149 @@
+@import url("/Utilities/utilities.css");
+/* simple snack bar */
+.space-para {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* snackbar styling */
+.snacked {
+  position: fixed;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.94;
+  width: 50rem;
+  z-index: 1500;
+  /* justify-content: space-between; */
+}
+
+/* snackbar basic display properties */
+.show-snackbar {
+  transition: 1s;
+  bottom: 5%;
+  padding: 1rem;
+  overflow: hidden-snackbar;
+  margin-left: -25rem;
+  left: 50%;
+}
+
+/* Stacked snackbar */
+
+.stacked-snackbar.show-snackbar {
+  padding: 0.2rem;
+  width: 20rem;
+  margin-left: -10rem;
+}
+
+/* Baseline snackbar */
+.baseline-snackbar {
+  gap: 1rem;
+}
+
+.baseline-snackbar .undo-snackbar {
+  margin-left: auto;
+}
+
+.undo-snackbar {
+  font-size: 2rem;
+}
+
+/* leading snackbar*/
+.leading-snackbar.show-snackbar,
+.hidden-snackbar {
+  min-width: 50rem;
+  left: 2%;
+  margin-left: 0px;
+}
+/* hidding snackbars */
+.all-Snackbar .hidden-snackbar {
+  transition: 1.3s;
+  min-width: 0;
+  bottom: -20%;
+  margin-left: -25rem;
+  left: 50%;
+}
+
+/* Buttons to display snacks */
+.snck {
+  height: 5rem;
+  width: 14rem;
+  display: block;
+  border: 0px;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 3px 0.5px grey;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.snck:hover {
+  color: var(--white);
+  background-color: var(--dark800);
+}
+
+.snck:focus {
+  color: var(--dark-cyan);
+  background-color: var(--dark800);
+}
+
+.snck.display-snack-btn {
+  padding: 1rem;
+}
+
+.snck:hover {
+  box-shadow: 1px 0px 3px 0.5px grey;
+}
+
+.all-snack-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+
+.undo-snackbar {
+  margin-left: auto;
+  color: rgb(233, 92, 252);
+  background-color: #333;
+  border: none;
+  transition: 0.1s;
+  padding: 0.3rem;
+  border-radius: 3px;
+  margin-left: auto;
+  padding-left: 0.5rem;
+}
+
+.undo-snackbar.change-previous-color {
+  background-color: rgb(66, 8, 75);
+  transition: 0.1s;
+}
+
+.undo-snackbar.new-color-snack-btn {
+  background-color: rgb(94, 32, 102);
+}
+
+.snack .cancel-snackbar {
+  margin-left: auto;
+}
+.cancel-snackbar {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+}
+
+/* cancel button color transition */
+.cancel-snackbar:hover {
+  background-color: rgb(88, 86, 86);
+}
+.fas.fa-times.cancel-snackbar.change-previous-color {
+  background-color: rgb(194, 193, 193);
+}
+.fas.fa-times.cancel-snackbar.new-color-snack-btn {
+  background-color: rgb(66, 66, 66);
+}
