@@ -1,0 +1,34 @@
+@import url("../../Utilities/utilities.css");
+.range-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 3rem;
+  background-color: var(--primary);
+  border: 20px solid var(--secondary);
+  border-radius: 10px;
+  outline: none;
+  opacity: 0.8;
+}
+
+.range-slider:hover {
+  opacity: 1;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5rem;
+  height: 2rem;
+  background-color: var(--tertiary);
+  border-radius: 3px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 5rem;
+  height: 2rem;
+  background-color: var(--yellow-green);
+  border-radius: 3px;
+  overflow: visible;
+  cursor: pointer;
+}
