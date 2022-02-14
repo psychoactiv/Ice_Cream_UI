@@ -29,7 +29,7 @@ ringtoneForm.addEventListener("submit", (e) => {
   let formValue = document.querySelector(
     "input[name = 'set-ringtone']:checked"
   );
-  let result = document.querySelector(".chosenRingtone");
+  let result = document.querySelector(".chosen-ringtone");
   result.style.display = "block";
   result.textContent = formValue.value + " is your new ringtone";
   setTimeout(() => (result.style.display = "none"), 4000);
