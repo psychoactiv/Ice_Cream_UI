@@ -7,11 +7,11 @@ const userInfo = document.querySelector(".drawer-user-info");
 
 let windowOpen = false;
 bars.addEventListener("click", () => {
-  sidebar.style.width = "23%";
+  sidebar.style.width = "43%";
   sidebar.style.paddingLeft = "1%";
   userInfo.style.paddingTop = "10px";
   userInfo.style.width = "18%";
-  main.style.marginLeft = "23%";
+  main.style.marginLeft = "43%";
   windowOpen = true;
 });
 close.addEventListener("click", closeWindowSideBar);
