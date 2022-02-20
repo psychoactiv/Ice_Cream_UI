@@ -1,0 +1,60 @@
+@import url("../../Utilities/utilities.css");
+.battery-text {
+  color: var(--grey700);
+}
+.battery-head {
+  font-size: 2rem;
+}
+
+.battery-main {
+  display: none;
+  flex-direction: column;
+  /* position: fixed; */
+  justify-content: space-around;
+  padding: 0.7rem;
+  margin-top: calc(10% - 7rem);
+  margin-left: calc(50% - 12.5rem);
+  row-gap: 1rem;
+  height: 14rem;
+  width: 25rem;
+  border-radius: 2px;
+  box-shadow: 1px 4px 5px 1px var(--black);
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.btn-battery {
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  margin-left: 0.8rem;
+  color: var(--violet700);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.btn-battery:hover {
+  background-color: var(--violet300);
+}
+
+.battery-option {
+  margin-left: auto;
+  display: flex;
+  row-gap: 2.5rem;
+}
+
+.open-modal {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--secondary);
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.open-modal:hover {
+  background-color: var(--brown);
+}
